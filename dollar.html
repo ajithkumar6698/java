@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>rupees to dollar</h1>
+    <input type="number" id="dol" placeholder="enter rupee" />
+    <button onclick="amount()">Enter</button>
+    <p></p>
+
+    <script>
+      function amount() {
+        let a = document.getElementById("dol").value;
+        let b = a * 0.01211;
+        document.getElementsByTagName("p")[0].innerHTML = b.toFixed(3);
+      }
+      //   var rupee = 83;
+      //   var dollar = 0.12;
+      //   var cal = rupee * dollar;
+
+      //   document.getElementById("ak").innerHTML = cal;
+    </script>
+  </body>
+</html>
